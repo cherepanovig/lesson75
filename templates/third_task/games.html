@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+
+    <ul>
+        <!-- Перебираем словарь product -->
+        {% for key, item_p in product.items %}
+        <li>{{ item_p }} <button>Купить</button></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/"><button>Вернуться на главную</button></a>
+</body>
+</html>
