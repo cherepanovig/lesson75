@@ -12,11 +12,13 @@ def shop_games(request):
     title = "Магазин игровых продуктов"
 
     # Список товаров
-    products = {
-        'item1': 'Atomic Heart',
-        'item2': 'Cyberpunk 2077',
-        'item3': 'PayDay 2'
-    }
+    # products = {
+    #     'item1': 'Atomic Heart',
+    #     'item2': 'Cyberpunk 2077',
+    #     'item3': 'PayDay 2'
+    # }
+
+    products = {'games': ['Atomic Heart', 'Cyberpunk 2077', 'PayDay 2']}
 
     # Передача словаря через параметр context
     # Передаем title отдельно и продукты отдельно

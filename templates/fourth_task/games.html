@@ -1,0 +1,20 @@
+{% extends "menu.html" %}
+
+{% block titlename %}Магазин{% endblock %}
+
+{% block pagename %}Игры{% endblock %}
+
+{% block main_content %}
+    {{ block.super }}
+    <h3>Страница для выбора товаров</h3>
+
+    <ul>
+        <!-- Перебираем словарь product по ключу games -->
+        {% for item_p in product.games %}
+        <li>{{ item_p }} <button>Купить</button></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/"><button>Вернуться на главную</button></a>
+{% endblock %}
+
